@@ -92,7 +92,7 @@ const TopPlay = () => {
     divRef?.current?.scrollIntoView({ behavior: "smooth" });
   });
 
-  const topPlays = data?.sampleData?.slice(0, 5) || sampleData?.slice(0, 5);
+  const topPlays = data?.slice(0, 5) || sampleData?.slice(0, 5);
 
   const handlePlayClick = (song, i) => {
     dispatch(setActiveSong({ song, data, i }));
