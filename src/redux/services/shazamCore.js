@@ -19,7 +19,7 @@ export const shazamCoreApi = createApi({
         `/v1/charts/world?country_code=${countryCode || "IN"}`,
     }),
     getSongDetails: builder.query({
-      query: (songId) => `/v2/tracks/details?track_id=${songId}`,
+      query: (songId) => `/v1/tracks/details?track_id=${songId}`,
     }),
     getSongRelated: builder.query({
       query: (songId) => `/v1/tracks/related?track_id=${songId}`,
